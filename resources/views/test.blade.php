@@ -1,5 +1,5 @@
 @php
-        $comicsData = config('data.comics_data');
+    $comicsData = config('data.comics-data');
 @endphp
 
 @dd($comicsData);
