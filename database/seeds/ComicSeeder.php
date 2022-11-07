@@ -17,6 +17,7 @@ class ComicSeeder extends Seeder
         foreach($comicsData as $comicData) {
 
             $comic = new Comic();
+
             foreach($comicData as $dataColumn => $data) {
                 $comic[$dataColumn] = $data;
             }
