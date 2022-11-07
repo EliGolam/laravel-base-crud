@@ -14,14 +14,16 @@ class ComicSeeder extends Seeder
     {
         $comicsData = config('data.comics-data');
 
-        $comic = new Comic();
-
         foreach($comicsData as $comicData) {
+
+            $comic = new Comic();
             foreach($comicData as $dataColumn => $data) {
                 $comic[$dataColumn] = $data;
             }
+
+            $comic->save();
         }
 
-        $comic->save();
+
     }
 }
