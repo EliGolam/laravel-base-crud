@@ -12,7 +12,7 @@ class ComicSeeder extends Seeder
      */
     public function run()
     {
-        $comicsData = config('data.comics_data');
+        $comicsData = config('data.comics-data');
 
         $comic = new Comic();
 
