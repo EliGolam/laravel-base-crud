@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @include('partials.metadata')
+
+    <!--Stylesheets and Scripts -->
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" type="text/css" />
+
+    <!-- My Scripts -->
+    <script src="./scripts/script.js" type="text/javascript" defer></script>
+    <!--#endregion Stylesheets and Scripts -->
+
+
+    <title>Comic Books</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    @include('partials.header')
+
+    <main>
+        @yield('main')
+    </main>
+
+    <footer>
+
+    </footer>
+</html>
