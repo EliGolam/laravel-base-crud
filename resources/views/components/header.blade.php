@@ -1,9 +1,6 @@
-@php
-    $links = config('data.nav-links');
-@endphp
-
 <header class="container flex ">
-    <h1 class="visually-hidden">DC Comics</h1>
+    {{-- <h1 class="visually-hidden">{{ $pageTitle }}</h1> --}}
+    <h1>{{ $pageTitle }}</h1>
     <div class="logo">
         <img src="{{ asset('images/dc-logo.png') }}" alt="DC Comics Logo" class="img-fluid">
     </div>
@@ -17,9 +14,9 @@
         <ul class="flex nav-list">
             @foreach ($links as $pageName => $link)
 
-                <li class="nav-link {{ request()->is($pageName) ? 'active' : '' }}"><a href="{{ $link }}">
-                    {{ $pageName }}
-                </a></li>
+                <li class="nav-link {{ request()->is($pageName) ||  request()->is($link) ? 'active' : '' }}">
+                    <a href="{{ $link }}">{{ $pageName }}</a>
+                </li>
             @endforeach
         </ul>
     </nav>

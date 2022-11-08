@@ -2,14 +2,12 @@
 
     return [
 
+        "stories" => "/",
         "characters" => "/characters",
         "comics" => "/comics",
         "movies" => "/movies",
-        "tv" => "/tv",
+        "shows" => "/shows",
         "games" => "/games",
-        "collectibles" => "/collectibles",
-        "videos" => "/videos",
-        "fans" => "/fans",
         "news" => "/news",
         "shop" => "/shop",
 

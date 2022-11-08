@@ -16,7 +16,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    @include('partials.header')
+    {{-- @dd($pageTitle) --}}
+    <x-header :pageTitle="$pageTitle" />
 
     <main>
         @yield('main')
