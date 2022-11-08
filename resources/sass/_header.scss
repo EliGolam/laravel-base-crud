@@ -1,0 +1,17 @@
+header {
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        width: min(20vw, 60px);
+    }
+
+    .top-nav {
+        text-transform: uppercase;
+        font-weight: $fw-bold;
+    }
+
+    .search-bar {
+        text-align: end;
+    }
+}

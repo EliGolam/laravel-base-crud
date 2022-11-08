@@ -1,0 +1,9 @@
+.nav-bar {
+    .nav-link {
+        padding: $_space-8 0;
+
+        &.active {
+            color: $clr-primary;
+        }
+    }
+}

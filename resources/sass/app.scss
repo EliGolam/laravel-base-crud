@@ -1,1 +1,27 @@
-//
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap');
+
+// RESET
+@import 'reset';
+
+// Variables
+@import 'variables';
+
+// Font-Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+
+// Generics
+@import 'main';
+@import 'aria';
+@import 'generics';
+
+// Elements
+@import 'buttons';
+@import 'nav-bar';
+
+// BLOCKS
+@import 'header';
