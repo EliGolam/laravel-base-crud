@@ -16,8 +16,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     {{-- @dd($pageTitle) --}}
-    <x-header :pageTitle="$pageTitle" />
+    {{-- Added default title to Header component --}}
+    <x-header :pageTitle="$pageTitle ?? 'DC Comics'" />
 
     <main>
         @yield('main')

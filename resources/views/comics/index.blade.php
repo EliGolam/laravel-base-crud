@@ -8,7 +8,9 @@
 @section('main')
 
     <section>
-        <h2>Popular</h2>
+        <h2>List of Comic Books</h2>
+
+        <a href="/">Back to Home Page</a>
 
         {{-- Dynamically generate Comic Books from data retrieved from Database --}}
         @foreach ($comics as $comic)
