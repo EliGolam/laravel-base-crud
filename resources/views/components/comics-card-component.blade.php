@@ -10,7 +10,7 @@
             @csrf
             @method('DELETE')
 
-            <button type="submit">Delete</button>
+            <button type="submit" onclick="return confirm('Are you sure you want to delete the entry?\nWarning: This action is irreversible')">Delete</button>
         </form>
     </div>
 

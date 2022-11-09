@@ -19371,6 +19371,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js/_delete-alert.js":
+/*!***************************************!*\
+  !*** ./resources/js/_delete-alert.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -19379,6 +19390,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./_delete-alert */ "./resources/js/_delete-alert.js");
 
 /***/ }),
 
