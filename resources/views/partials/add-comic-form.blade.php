@@ -1,6 +1,8 @@
 <form action="{{ route('comics.store') }}" method="POST">
     @csrf
 
+    @include('partials.validation-error')
+
     <div>
         <label for="title">Title</label>
         <input type="text" name="title" id="title" maxlength="150" required placeholder="Comic Title" value="{{ old('title', '') }}" />
@@ -23,7 +25,7 @@
 
     <div>
         <label for="price">Price</label>
-        <input type="number" name="price" id="price" min="0" max="1000" placeholder="10" />
+        <input type="number" name="price" id="price" min="0" max="1000" placeholder="10" step="0.01" />
     </div>
 
     <div>

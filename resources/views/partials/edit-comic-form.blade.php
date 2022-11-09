@@ -1,39 +1,48 @@
-<form action="{{ route('comics.store') }}" method="POST">
+<form action="{{ route('comics.update', $comic->id) }}" method="POST">
     @csrf
+    @method('PUT')
+
+    @include('partials.validation-error')
 
     <div>
         <label for="title">Title</label>
-        <input type="text" name="title" id="title" maxlength="150" required placeholder="Comic Title" value="{{ old('title', '') }}" />
+        <input type="text" name="title" id="title" maxlength="150" required placeholder="Comic Title"
+            value="{{ old('title', $comic->title) }}" />
     </div>
 
     <div>
         <label for="series">Series</label>
-        <input type="text" name="series" id="series" maxlength="150" placeholder="Comic Series (optional)" />
+        <input type="text" name="series" id="series" maxlength="150" placeholder="Comic Series (optional)"
+            value="{{ old('series', $comic->series) }}" />
     </div>
 
     <div>
         <label for="thumb">Thumbnail (image link)</label>
-        <input type="url" name="thumb" id="thumb" placeholder="https://google-image-link.com (optional)" />
+        <input type="url" name="thumb" id="thumb" placeholder="https://google-image-link.com (optional)"
+            value="{{ old('thumb', $comic->thumb) }}" />
     </div>
 
     <div>
         <label for="type">Comic Book Type</label>
-        <input type="text" name="type" id="type" placeholder="Mystery (optional)" />
+        <input type="text" name="type" id="type" placeholder="Mystery (optional)"
+            value="{{ old('type', $comic->type) }}" />
     </div>
 
     <div>
         <label for="price">Price</label>
-        <input type="number" name="price" id="price" min="0" max="1000" placeholder="10" />
+        <input type="number" name="price" id="price" min="0" max="1000" placeholder="10" step="0.01"
+            value="{{ old('price', $comic->price) }}" />
     </div>
 
     <div>
         <label for="sale_date">Sale Date (optional)</label>
-        <input type="date" name="sale_date" id="sale_date" />
+        <input type="date" name="sale_date" id="sale_date"
+            value="{{ old('sale_date', $comic->sale_date) }}" />
     </div>
 
     <div>
         <label for="description"></label>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <textarea name="description" id="description" cols="30" rows="10">{{ old('description', $comic->description) }}</textarea>
     </div>
 
     <button type="submit">Add Comic</button>
