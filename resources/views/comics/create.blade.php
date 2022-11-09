@@ -7,4 +7,6 @@
         @include('partials.add-comic-form')
     </section>
 
+    {{-- @if($errors->an) --}}
+
 @endsection

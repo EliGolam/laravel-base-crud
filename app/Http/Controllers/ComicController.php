@@ -37,6 +37,15 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+
+        // VALIDATION
+        $request->validate([
+            'title' => 'required|string|unique:comics|min:5|max:150',
+            'description' => 'string',
+            'thumb' => 'url',
+            'price' => 'required|numeric|min:0|max:1000',
+        ]);
+
         $data = $request->all();
 
         $comic = new Comic();
@@ -66,7 +75,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**
