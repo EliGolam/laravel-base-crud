@@ -5,12 +5,17 @@
 
 @section('main')
 
-    @foreach ($comicsData as $comic)
+    <section>
+        <h2>Popular</h2>
 
-        <article>
+        {{-- Dynamically generate Comic Books from data retrieved from Database --}}
+        @foreach ($comicsData as $comic)
             <x-comics-card-component :comic="$comic" />
-        </article>
+        @endforeach
+    </section>
 
-    @endforeach
+    <div>
+        <a href="">Add New Comic</a>
+    </div>
 
 @endsection
