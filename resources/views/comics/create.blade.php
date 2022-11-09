@@ -2,5 +2,9 @@
 
 
 @section('main')
-    @include('partials.add-comic-form')
+    <section>
+        <h2>Add New Comic book record</h2>
+        @include('partials.add-comic-form')
+    </section>
+
 @endsection

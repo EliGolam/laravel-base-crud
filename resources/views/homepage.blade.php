@@ -15,7 +15,7 @@
     </section>
 
     <div>
-        <a href="">Add New Comic</a>
+        <a href="{{ route('comics.create') }}">Add New Comic</a>
     </div>
 
 @endsection
