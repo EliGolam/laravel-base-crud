@@ -2,9 +2,9 @@
 
     return [
 
-        "stories" => "/",
+        "stories" => "/stories",
         "characters" => "/characters",
-        "comics" => "/comics",
+        "comics" => "/",
         "movies" => "/movies",
         "shows" => "/shows",
         "games" => "/games",

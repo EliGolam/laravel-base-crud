@@ -13,11 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'StoriesController@index');
 
-Route::get('/characters', function() {
-    return view('characters');
-});
+// MAIN ROUTES
+Route::get('/', 'HomePageController@index');
+
+Route::get('/characters', 'CharactersController@index');
+
+Route::get('/stories', 'StoriesController@index');
+
+Route::get('/games', 'GamesController@index');
+
+Route::get('/movies', 'MoviesController@index');
+
+Route::get('/shows', 'ShowsController@index');
+
+Route::get('/news', 'NewsController@index');
+
+Route::get('/shop', 'ShopController@index');
 
 
+
+
+// RESOURCES
 Route::resource('comics', 'ComicController');
