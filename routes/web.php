@@ -15,21 +15,21 @@ use Illuminate\Support\Facades\Route;
 
 
 // MAIN ROUTES
-Route::get('/', 'HomePageController@index');
+Route::get('/', 'HomePageController@index')->name('homepage');
 
-Route::get('/characters', 'CharactersController@index');
+Route::get('/characters', 'CharactersController@index')->name('characters');
 
-Route::get('/stories', 'StoriesController@index');
+Route::get('/stories', 'StoriesController@index')->name('stories');
 
-Route::get('/games', 'GamesController@index');
+Route::get('/games', 'GamesController@index')->name('games');
 
-Route::get('/movies', 'MoviesController@index');
+Route::get('/movies', 'MoviesController@index')->name('movies');
 
-Route::get('/shows', 'ShowsController@index');
+Route::get('/shows', 'ShowsController@index')->name('shows');
 
-Route::get('/news', 'NewsController@index');
+Route::get('/news', 'NewsController@index')->name('news');
 
-Route::get('/shop', 'ShopController@index');
+Route::get('/shop', 'ShopController@index')->name('shop');
 
 
 

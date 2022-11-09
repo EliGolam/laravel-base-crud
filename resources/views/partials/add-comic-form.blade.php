@@ -13,7 +13,7 @@
 
     <div>
         <label for="thumb">Thumbnail (image link)</label>
-        <input type="text" name="thumb" id="thumb" placeholder="https://google-image-link.com (optional)" />
+        <input type="url" name="thumb" id="thumb" placeholder="https://google-image-link.com (optional)" />
     </div>
 
     <div>
